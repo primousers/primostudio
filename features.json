@@ -1,0 +1,105 @@
+[
+	{
+		"face": "https://pbs.twimg.com/profile_images/905906120794963968/lHQ0ivpW_400x400.jpg",
+		"notes": "Add a nav bar underneath the search bar to provide additional links in the primo-explore UI",
+		"who": "NYU Libraries",
+		"what": "primo-explore-search-bar-sub-menu",
+		"linkGit": "https://github.com/NYULibraries/primo-explore-search-bar-sub-menu",
+		"npmid": "search-bar-sub-menu-studio",
+		"hook": "prm-search-bar-after",
+		"config": {
+			"multiple":5,
+			"form":
+			[
+				{"key":"name"},
+				{"key":"description"},
+				{"key":"action"},
+				{"key":"iconSet", "templateOptions":{"label": "icon set"}},
+				{"key":"iconName", "templateOptions":{"label": "icon name"}},
+				{"key":"cssClasses"},
+				{"key":"show_xs"}
+			]
+		}
+	},
+	{
+		"face": "https://avatars0.githubusercontent.com/u/9952833?s=400&v=4",
+		"notes": "Add custom text and an option to expand results to PCI when no records retrieved",
+		"who": "Sarah Zum",
+		"what": "Custom text and link to PCI when no search results",
+		"linkGit": "https://github.com/SarahZum/primo-explore-custom-no-results",
+		"npmid": "primo-explore-custom-no-results",
+		"hook": "prm-no-search-result-after"
+	},
+	{
+		"face": "https://avatars2.githubusercontent.com/u/5121409?s=200&v=4",
+		"notes": "When search results are displayed, a record's OCLC numbers are passed to the HathiTrust Bib API. If at least one item with free full-text access is found, a link to the HathiTrust record is appended to the availability section",
+		"who": "UMNLibraries",
+		"what": "primo-explore-hathitrust-availability",
+		"linkGit": "https://github.com/UMNLibraries/primo-explore-hathitrust-availability",
+		"npmid": "hathi-trust-availability-studio",
+		"hook": "prm-search-result-availability-line-after"
+	},
+	{
+		"face": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQR63Hw5_KOSu46kUJhwJbxYFMbKxUsfIpwsKAq7gb99RD5pCK7",
+		"notes": "Slider input for range facet",
+		"who": "John Doe",
+		"what": "Date slider for range facet",
+		"linkGit": "https://github.com/noamamit92/primo-explore-search-bar-demo",
+		"npmid": "primo-explore-date-slider",
+		"hook": "prm-facet-range-after"
+	},
+	{
+		"face": "https://pbs.twimg.com/profile_images/905906120794963968/lHQ0ivpW_400x400.jpg",
+		"notes": "Override the availability-links section in brief and full results with a link to your link resolver",
+		"who": "NYU Libraries",
+		"what": "primo-explore-getit-to-link-resolver",
+		"linkGit": "https://github.com/NYULibraries/primo-explore-getit-to-link-resolver",
+		"npmid": "primo-explore-getit-to-link-resolver-studio",
+		"hook": "prm-search-result-availability-line-after"
+	},
+	{
+		"face": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSmXqD0HzChZD5uBY-xTjHpVWdiSu_EhkqokwF91P73xSZcZ4Klxg",
+		"what": "Google Maps in Locations",
+		"who": "Noam Amit",
+		"when": "3:08PM",
+		"notes": "Integrating a Google maps iframe to each location item based on the callNumber",
+		"linkGit": "https://github.com/noamamit92/primo-explore-location-item-after-google-maps-demo",
+		"npmid": "primo-explore-location-item-after-protractor-demo"
+	},
+	{
+		"face": "https://developers.google.com/experts/img/user/117030935449976517020.png",
+		"notes": "A demo feature for search bar hook",
+		"who": "Jane Doe",
+		"what": "Search Bar Demo A",
+		"linkGit": "https://github.com/noamamit92/primo-explore-search-bar-demo",
+		"npmid": "primo-explore-app-store-feature-demo-a",
+		"hook": "prm-search-bar-after"
+	},
+	{
+		"face": "https://avatars0.githubusercontent.com/u/18166991?s=460&v=4",
+		"notes": "A demo feature for search bar hook",
+		"who": "Shoul Manevitz",
+		"what": "Search Bar Demo B",
+		"linkGit": "https://github.com/noamamit92/primo-explore-search-bar-demo",
+		"npmid": "primo-explore-app-store-feature-demo-b",
+		"hook": "prm-search-bar-after"
+	},
+	{
+		"face": "https://avatars1.githubusercontent.com/u/8035487?s=460&v=4",
+		"what": "Linked data",
+		"who": "Noam Amit",
+		"when": "3:08PM",
+		"notes": "Adding an linked data widget to the Primo full view",
+		"linkGit": "https://github.com/ExLibrisGroup/primo-explore-linked-data-demo",
+		"npmid": "primo-explore-linked-data-demo"
+	},
+	{
+		"face": "https://avatars1.githubusercontent.com/u/8035487?s=460&v=4",
+		"notes": "Search Bar Demo",
+		"who": "Noam Amit",
+		"what": "Demo from Eluna",
+		"linkGit": "https://github.com/noamamit92/primo-explore-search-bar-demo",
+		"npmid": "primo-explore-search-bar-demo",
+		"hook": "prm-search-bar-after"
+	}
+]
