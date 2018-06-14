@@ -6,6 +6,7 @@
 		"what": "primo-explore-search-bar-sub-menu",
 		"linkGit": "https://github.com/NYULibraries/primo-explore-search-bar-sub-menu",
 		"npmid": "search-bar-sub-menu-studio",
+		"version": "0.0.4",
 		"hook": "prm-search-bar-after",
 		"config": {
 			"multiple":5,
@@ -28,6 +29,7 @@
 		"what": "Custom text and link to PCI when no search results",
 		"linkGit": "https://github.com/SarahZum/primo-explore-custom-no-results",
 		"npmid": "primo-explore-custom-no-results",
+		"version": "0.0.2",
 		"hook": "prm-no-search-result-after"
 	},
 	{
@@ -37,6 +39,7 @@
 		"what": "primo-explore-hathitrust-availability",
 		"linkGit": "https://github.com/UMNLibraries/primo-explore-hathitrust-availability",
 		"npmid": "hathi-trust-availability-studio",
+		"version": "0.0.2",
 		"hook": "prm-search-result-availability-line-after"
 	},
 	{
@@ -46,6 +49,7 @@
 		"what": "Date slider for range facet",
 		"linkGit": "https://github.com/noamamit92/primo-explore-search-bar-demo",
 		"npmid": "primo-explore-date-slider",
+		"version": "0.0.1",
 		"hook": "prm-facet-range-after"
 	},
 	{
@@ -55,16 +59,8 @@
 		"what": "primo-explore-getit-to-link-resolver",
 		"linkGit": "https://github.com/NYULibraries/primo-explore-getit-to-link-resolver",
 		"npmid": "primo-explore-getit-to-link-resolver-studio",
+		"version": "2.0.7",
 		"hook": "prm-search-result-availability-line-after"
-	},
-	{
-		"face": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSmXqD0HzChZD5uBY-xTjHpVWdiSu_EhkqokwF91P73xSZcZ4Klxg",
-		"what": "Google Maps in Locations",
-		"who": "Noam Amit",
-		"when": "3:08PM",
-		"notes": "Integrating a Google maps iframe to each location item based on the callNumber",
-		"linkGit": "https://github.com/noamamit92/primo-explore-location-item-after-google-maps-demo",
-		"npmid": "primo-explore-location-item-after-protractor-demo"
 	},
 	{
 		"face": "https://developers.google.com/experts/img/user/117030935449976517020.png",
@@ -73,6 +69,7 @@
 		"what": "Search Bar Demo A",
 		"linkGit": "https://github.com/noamamit92/primo-explore-search-bar-demo",
 		"npmid": "primo-explore-app-store-feature-demo-a",
+		"version": "0.0.2",
 		"hook": "prm-search-bar-after"
 	},
 	{
@@ -82,24 +79,7 @@
 		"what": "Search Bar Demo B",
 		"linkGit": "https://github.com/noamamit92/primo-explore-search-bar-demo",
 		"npmid": "primo-explore-app-store-feature-demo-b",
-		"hook": "prm-search-bar-after"
-	},
-	{
-		"face": "https://avatars1.githubusercontent.com/u/8035487?s=460&v=4",
-		"what": "Linked data",
-		"who": "Noam Amit",
-		"when": "3:08PM",
-		"notes": "Adding an linked data widget to the Primo full view",
-		"linkGit": "https://github.com/ExLibrisGroup/primo-explore-linked-data-demo",
-		"npmid": "primo-explore-linked-data-demo"
-	},
-	{
-		"face": "https://avatars1.githubusercontent.com/u/8035487?s=460&v=4",
-		"notes": "Search Bar Demo",
-		"who": "Noam Amit",
-		"what": "Demo from Eluna",
-		"linkGit": "https://github.com/noamamit92/primo-explore-search-bar-demo",
-		"npmid": "primo-explore-search-bar-demo",
+		"version": "0.0.2",
 		"hook": "prm-search-bar-after"
 	}
 ]
