@@ -79,7 +79,7 @@
 		"what": "Search Bar Demo B",
 		"linkGit": "https://github.com/noamamit92/primo-explore-search-bar-demo",
 		"npmid": "primo-explore-app-store-feature-demo-b",
-		"version": "0.0.2",
+		"version": "0.0.4",
 		"hook": "prm-search-bar-after"
 	}
 ]
