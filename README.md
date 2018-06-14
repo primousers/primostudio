@@ -26,3 +26,28 @@ This is a cool place to hang out.
 | type | [plugins/dropbox/README.md][PlDb] |
 
 | Name | [plugins/dropbox/README.md][PlDb] |
+
+Example:
+
+	{
+		"face": "https://pbs.twimg.com/profile_images/905906120794963968/lHQ0ivpW_400x400.jpg",
+		"notes": "Add a nav bar underneath the search bar to provide additional links in the primo-explore UI",
+		"who": "NYU Libraries",
+		"what": "primo-explore-search-bar-sub-menu",
+		"linkGit": "https://github.com/NYULibraries/primo-explore-search-bar-sub-menu",
+		"npmid": "search-bar-sub-menu-studio",
+		"hook": "prm-search-bar-after",
+		"config": {
+			"multiple":5,
+			"form":
+			[
+				{"key":"name"},
+				{"key":"description"},
+				{"key":"action"},
+				{"key":"iconSet", "templateOptions":{"label": "icon set"}},
+				{"key":"iconName", "templateOptions":{"label": "icon name"}},
+				{"key":"cssClasses"},
+				{"key":"show_xs"}
+			]
+		}
+	},
