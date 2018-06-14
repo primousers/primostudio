@@ -13,6 +13,16 @@ This is a cool place to hang out.
 
 ### Descriptive Metadata - How you talk about your project
 
-| Plugin | README |
+| tag | description | notes | 
 | ------ | ------ |
+| face | an avatar of yourself. | A small jpeg URL |
+| notes | [plugins/dropbox/README.md] | upto 150 characters to explain your project |
+| who | Your name / GitHub Identity | [PlDb] |
+| Organization | [plugins/dropbox/README.md][PlDb] |
+| what | [plugins/dropbox/README.md][PlDb] |
+| linkGit | [plugins/dropbox/README.md][PlDb] |
+| npmid | [plugins/dropbox/README.md][PlDb] |
+| hook | [plugins/dropbox/README.md][PlDb] |
+| type | [plugins/dropbox/README.md][PlDb] |
+
 | Name | [plugins/dropbox/README.md][PlDb] |
