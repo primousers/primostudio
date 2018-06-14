@@ -63,23 +63,13 @@
 		"hook": "prm-search-result-availability-line-after"
 	},
 	{
-		"face": "https://developers.google.com/experts/img/user/117030935449976517020.png",
-		"notes": "A demo feature for search bar hook",
-		"who": "Jane Doe",
-		"what": "Search Bar Demo A",
-		"linkGit": "https://github.com/noamamit92/primo-explore-search-bar-demo",
-		"npmid": "primo-explore-app-store-feature-demo-a",
-		"version": "0.0.2",
-		"hook": "prm-search-bar-after"
-	},
-	{
 		"face": "https://avatars0.githubusercontent.com/u/18166991?s=460&v=4",
 		"notes": "A demo feature for search bar hook",
 		"who": "Shoul Manevitz",
 		"what": "Search Bar Demo B",
 		"linkGit": "https://github.com/noamamit92/primo-explore-search-bar-demo",
 		"npmid": "primo-explore-app-store-feature-demo-b",
-		"version": "0.0.4",
+		"version": "0.0.5",
 		"hook": "prm-search-bar-after"
 	}
 ]
