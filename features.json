@@ -71,5 +71,22 @@
 		"npmid": "primo-explore-app-store-feature-demo-b",
 		"version": "0.0.5",
 		"hook": "prm-search-bar-after"
-	}
+	},
+	{
+		"face": "https://pbs.twimg.com/profile_images/905906120794963968/lHQ0ivpW_400x400.jpg",
+		"notes": "Add a link to report a issue with a record in the full view page of the record",
+		"who": "Allen Jones",
+		"what": "Report a problem with this record",
+		"linkGit": "https://github.com/ajones3066/primo-explore-reportABug",
+		"npmid": "report-a-bug-primo-studio",
+		"version": "1.0.0",
+		"hook": "prm-service-links-after",
+		"config": {
+			"multiple":1,
+			"form":
+			[
+				{"key":"text", "templateOptions":{"label": "text for link"}}
+			]
+		}
+	}	
 ]
