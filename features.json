@@ -73,6 +73,25 @@
 		"hook": "prm-search-bar-after"
 	},
 	{
+	    "face": "https://avatars2.githubusercontent.com/u/19833254?s=400&v=4",
+	    "notes": "Allows you to remove the GES request from Primo VE full view. Except for the configured locations",
+	    "who": "Gilad Wolf",
+	    "what": "remove specific request except for location",
+	    "linkGit": "https://github.com/gilax/remove-specific-request-for-location",
+	    "npmid": "remove-specific-request-for-location",
+	    "hook": "prm-service-links-after",
+	    "version": "1.0.5",
+	    "systemExclusive": "ve",
+	    "config": {
+		"form":
+		    [
+			{"key":"libraryCode", "templateOptions":{"label": "library code for appearance"}},
+			{"key":"subLocationCode", "templateOptions":{"label": "location code for appearance"}},
+			{"key":"displayLabel", "templateOptions":{"label": "display link"}}
+		    ]
+	    }
+	},
+  {
 		"face": "https://pbs.twimg.com/profile_images/905906120794963968/lHQ0ivpW_400x400.jpg",
 		"notes": "Report an issue with a record from the full display page",
 		"who": "Allen Jones",
