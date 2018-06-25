@@ -90,5 +90,23 @@
 			{"key":"displayLabel", "templateOptions":{"label": "display link"}}
 		    ]
 	    }
-	}
+	},
+  {
+		"face": "https://pbs.twimg.com/profile_images/905906120794963968/lHQ0ivpW_400x400.jpg",
+		"notes": "Report an issue with a record from the full display page",
+		"who": "Allen Jones",
+		"what": "Report a bug",
+		"linkGit": "https://github.com/ajones3066/primo-explore-reportABug",
+		"npmid": "report-bug-primo-studio",
+		"version": "1.0.0",
+		"hook": "prm-service-links-after",
+		"config": {
+			"multiple":1,
+			"form":
+			[
+				{"key":"text"},
+				{"key":"linkBase", "templateOptions":{"label": "Link Base"}}
+			]
+		}
+	}	
 ]
