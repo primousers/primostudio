@@ -89,9 +89,9 @@
 			{"key":"subLocationCode", "templateOptions":{"label": "location code for appearance"}},
 			{"key":"displayLabel", "templateOptions":{"label": "display link"}}
 		    ]
-	    }
+	    	}
 	},
-  {
+  	{
 		"face": "https://pbs.twimg.com/profile_images/905906120794963968/lHQ0ivpW_400x400.jpg",
 		"notes": "Report an issue with a record from the full display page",
 		"who": "Allen Jones",
