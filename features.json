@@ -80,7 +80,7 @@
 	    "linkGit": "https://github.com/gilax/remove-specific-request-for-location",
 	    "npmid": "remove-specific-request-for-location",
 	    "hook": "prm-service-links-after",
-	    "version": "1.0.5",
+	    "version": "1.0.7",
 	    "systemExclusive": "ve",
 	    "config": {
 		"form":
