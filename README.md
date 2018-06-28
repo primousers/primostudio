@@ -43,7 +43,8 @@ A descriptor is a JSON-Object consisting the following fields :
 | `linkGit` | string: required | URL link for github of add-on |
 | `npmid` | string: required | ID of add-on as published on NPM |
 | `version` | string: required | Version of add-on to be installed from NPM. Necessary in order to update add-on in Primo Studio|
-| `hook` | string: required | name of hook where want to place add-on. E.g: prm-search-bar-after  
+| `hook` | string: required | Name of hook where want to place add-on. E.g: prm-search-bar-after
+| `systemExclusive` | string: optional | System where the feature only works there, `primo` or `ve`. The field is optional because by default any feature should work for both systems, but on special cases (requests, locations, etc...) there is option to limit the system to just one system (`primo` \ `ve`)
 | `config` | JSON-Object: optional | Object defining a form that will be opened in Primo Studio where users can enter configuration parameters for add-on. See Below.  |
 
 
