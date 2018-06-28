@@ -80,18 +80,18 @@
 	    "linkGit": "https://github.com/gilax/remove-specific-request-for-location",
 	    "npmid": "remove-specific-request-for-location",
 	    "hook": "prm-service-links-after",
-	    "version": "1.0.5",
+	    "version": "1.0.8",
 	    "systemExclusive": "ve",
 	    "config": {
 		"form":
 		    [
-			{"key":"libraryCode", "templateOptions":{"label": "library code for appearance"}},
-			{"key":"subLocationCode", "templateOptions":{"label": "location code for appearance"}},
-			{"key":"displayLabel", "templateOptions":{"label": "display link"}}
+				{"key":"libraryCode", "templateOptions":{"label": "library code for appearance"}},
+				{"key":"subLocationCode", "templateOptions":{"label": "location code for appearance"}},
+				{"key":"displayLabel", "templateOptions":{"label": "display link"}}
 		    ]
-	    }
+		}
 	},
-  {
+  	{
 		"face": "https://pbs.twimg.com/profile_images/905906120794963968/lHQ0ivpW_400x400.jpg",
 		"notes": "Report an issue with a record from the full display page",
 		"who": "Allen Jones",
