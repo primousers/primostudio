@@ -80,16 +80,16 @@
 	    "linkGit": "https://github.com/gilax/remove-specific-request-for-location",
 	    "npmid": "remove-specific-request-for-location",
 	    "hook": "prm-service-links-after",
-	    "version": "1.0.5",
+	    "version": "1.0.8",
 	    "systemExclusive": "ve",
 	    "config": {
 		"form":
 		    [
-			{"key":"libraryCode", "templateOptions":{"label": "library code for appearance"}},
-			{"key":"subLocationCode", "templateOptions":{"label": "location code for appearance"}},
-			{"key":"displayLabel", "templateOptions":{"label": "display link"}}
+				{"key":"libraryCode", "templateOptions":{"label": "library code for appearance"}},
+				{"key":"subLocationCode", "templateOptions":{"label": "location code for appearance"}},
+				{"key":"displayLabel", "templateOptions":{"label": "display link"}}
 		    ]
-	    	}
+		}
 	},
   	{
 		"face": "https://pbs.twimg.com/profile_images/905906120794963968/lHQ0ivpW_400x400.jpg",
@@ -108,5 +108,70 @@
 				{"key":"linkBase", "templateOptions":{"label": "Link Base"}}
 			]
 		}
-	}	
+	},
+    {
+        "face": "https://avatars1.githubusercontent.com/u/8748212?s=40&v=4",
+        "notes": "Add Altmetrics to full display",
+        "who": "Ulrich Leodolter",
+        "what": "Altmetrics",
+        "linkGit": "https://github.com/uleodolter/primo-studio-altmetrics",
+        "npmid": "primo-studio-altmetrics",
+        "version": "0.2.8",
+        "hook": "prm-full-view-after",
+        "config": {
+            "form": [
+                {
+                    "key": "badgetype",
+                    "type": "select",
+                    "templateOptions": {
+                        "label": "Altmetrics Badge type",
+                        "options": [
+                            {
+                                "value": "Default",
+                                "name": "Default"
+                            },
+                            {
+                                "value": "donut",
+                                "name": "Small donut"
+                            },
+                            {
+                                "value": "medium-donut",
+                                "name": "Medium donut"
+                            },
+                            {
+                                "value": "large-donut",
+                                "name": "Large donut"
+                            },
+                            {
+                                "value": "bar",
+                                "name": "Small bar"
+                            },
+                            {
+                                "value": "medium-bar",
+                                "name": "Medium bar"
+                            },
+                            {
+                                "value": "large-bar",
+                                "name": "Large bar"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "key": "apikey",
+                    "type": "input",
+                    "templateOptions": {
+                        "label": "Altmetrics API key"
+                    }
+                },
+                {
+                    "key": "isbn",
+                    "type": "checkbox",
+                    "templateOptions": {
+                        "label": "Use ISBN fallback"
+                    }
+                }
+            ]
+        }
+    }
 ]
