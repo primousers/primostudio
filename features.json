@@ -116,7 +116,7 @@
         "what": "Altmetrics",
         "linkGit": "https://github.com/uleodolter/primo-studio-altmetrics",
         "npmid": "primo-studio-altmetrics",
-        "version": "0.2.8",
+        "version": "1.0.1",
         "hook": "prm-full-view-after",
         "config": {
             "form": [
@@ -181,7 +181,7 @@
         "what": "PlumX Widget",
         "linkGit": "https://github.com/uleodolter/primo-studio-plumx",
         "npmid": "primo-studio-plumx",
-        "version": "0.1.0",
+        "version": "1.0.1",
         "hook": "prm-full-view-after",
         "config": {
             "form": [
