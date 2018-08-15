@@ -116,7 +116,7 @@
         "what": "Altmetrics",
         "linkGit": "https://github.com/uleodolter/primo-studio-altmetrics",
         "npmid": "primo-studio-altmetrics",
-        "version": "0.2.8",
+        "version": "1.0.1",
         "hook": "prm-full-view-after",
         "config": {
             "form": [
@@ -162,6 +162,80 @@
                     "type": "input",
                     "templateOptions": {
                         "label": "Altmetrics API key"
+                    }
+                },
+                {
+                    "key": "isbn",
+                    "type": "checkbox",
+                    "templateOptions": {
+                        "label": "Use ISBN fallback"
+                    }
+                }
+            ]
+        }
+    },
+    {
+        "face": "https://avatars1.githubusercontent.com/u/8748212?s=40&v=4",
+        "notes": "Add PlumX to full display",
+        "who": "Ulrich Leodolter",
+        "what": "PlumX Widget",
+        "linkGit": "https://github.com/uleodolter/primo-studio-plumx",
+        "npmid": "primo-studio-plumx",
+        "version": "1.0.1",
+        "hook": "prm-full-view-after",
+        "config": {
+            "form": [
+                {
+                    "key": "widgettype",
+                    "type": "select",
+                    "templateOptions": {
+                        "label": "PlumX Widget type",
+                        "options": [
+                            {
+                                "value": "print",
+                                "name": "Plum Print"
+                            },
+                            {
+                                "value": "details",
+                                "name": "Details"
+                            },
+                            {
+                                "value": "summary",
+                                "name": "Summary"
+                            },
+                            {
+                                "value": "badge",
+                                "name": "PlumX Badge"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "key": "widgettheme",
+                    "type": "select",
+                    "templateOptions": {
+                        "label": "PlumX Widget theme",
+                        "options": [
+                            {
+                                "value": "default",
+                                "name": "Default"
+                            },
+                            {
+                                "value": "bigben",
+                                "name": "Big Ben"
+                            },
+                            {
+                                "value": "liberty",
+                                "name": "Liberty"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "key": "apikey",
+                    "type": "input",
+                    "templateOptions": {
+                        "label": "PlumX API key"
                     }
                 },
                 {
