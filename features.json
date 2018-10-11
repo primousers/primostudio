@@ -1,5 +1,139 @@
 [
 	{
+    "face": "https://avatars0.githubusercontent.com/u/5099608?s=200&v=4",
+    "notes": "Add BrowZine to full display",
+    "who": "Third Iron, LLC",
+    "what": "BrowZine",
+    "linkGit": "https://github.com/thirdiron/primo-studio-browzine",
+    "npmid": "primo-studio-browzine",
+    "version": "1.0.0",
+    "hook": "prm-search-result-availability-line-after",
+    "config": {
+      "form": [
+        {
+          "key": "api",
+          "type": "input",
+          "templateOptions": {
+            "label": "BrowZine API Endpoint"
+          }
+        },
+        {
+          "key": "apiKey",
+          "type": "input",
+          "templateOptions": {
+            "label": "BrowZine API Key"
+          }
+        },
+        {
+          "key": "journalCoverImagesEnabled",
+          "type": "select",
+          "templateOptions": {
+            "label": "Enable Journal Cover Images",
+            "options": [
+              {
+                "name": "true",
+                "value": true
+              },
+              {
+                "name": "false",
+                "value": false
+              }
+            ]
+          }
+        },
+        {
+          "key": "journalBrowZineWebLinkTextEnabled",
+          "type": "select",
+          "templateOptions": {
+            "label": "Enable BrowZine Web Journal Issue Links",
+            "options": [
+              {
+                "name": "true",
+                "value": true
+              },
+              {
+                "name": "false",
+                "value": false
+              }
+            ]
+          }
+        },
+        {
+          "key": "journalBrowZineWebLinkText",
+          "type": "input",
+          "templateOptions": {
+            "label": "BrowZine Web Journal Issue Link Text"
+          }
+        },
+        {
+          "key": "articleBrowZineWebLinkTextEnabled",
+          "type": "select",
+          "templateOptions": {
+            "label": "Enable BrowZine Web Article In Context Links",
+            "options": [
+              {
+                "name": "true",
+                "value": true
+              },
+              {
+                "name": "false",
+                "value": false
+              }
+            ]
+          }
+        },
+        {
+          "key": "articleBrowZineWebLinkText",
+          "type": "input",
+          "templateOptions": {
+            "label": "BrowZine Web Article In Context Link Text"
+          }
+        },
+        {
+          "key": "articlePDFDownloadLinkEnabled",
+          "type": "select",
+          "templateOptions": {
+            "label": "Enable BrowZine Web PDF Download Links",
+            "options": [
+              {
+                "name": "true",
+                "value": true
+              },
+              {
+                "name": "false",
+                "value": false
+              }
+            ]
+          }
+        },
+        {
+          "key": "articlePDFDownloadLinkText",
+          "type": "input",
+          "templateOptions": {
+            "label": "BrowZine Web PDF Download Link Text"
+          }
+        },
+        {
+          "key": "printRecordsIntegrationEnabled",
+          "type": "select",
+          "templateOptions": {
+            "label": "Enable Print Records Integration",
+            "options": [
+              {
+                "name": "true",
+                "value": true
+              },
+              {
+                "name": "false",
+                "value": false
+              }
+            ]
+          }
+        }
+      ]
+    }
+  },
+	{
 		"face": "https://pbs.twimg.com/profile_images/905906120794963968/lHQ0ivpW_400x400.jpg",
 		"notes": "Add a nav bar underneath the search bar to provide additional links in the primo-explore UI",
 		"who": "NYU Libraries",
