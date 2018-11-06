@@ -1,5 +1,151 @@
 [
 	{
+    "face": "https://avatars0.githubusercontent.com/u/5099608?s=200&v=4",
+    "notes": "Add Third Iron powered enhancements to your search results: LibKey Instant PDF Downloading for fast content access, Viewing the Complete Issue of an article inside of BrowZine to increase serendipitous discovery and Journal Cover Images to improve journal recognition.",
+    "who": "Third Iron, LLC",
+    "what": "BrowZine",
+    "linkGit": "https://github.com/thirdiron/primo-studio-browzine",
+    "npmid": "primo-studio-browzine",
+    "version": "1.1.0",
+    "hook": "prm-search-result-availability-line-after",
+    "config": {
+      "form": [
+        {
+          "key": "libraryId",
+          "type": "input",
+          "templateOptions": {
+            "required": true,
+            "label": "BrowZine Library Id (Questions? Email support@thirdiron.com)",
+            "placeholder": "ENTER LIBRARY ID"
+          }
+        },
+        {
+          "key": "apiKey",
+          "type": "input",
+          "templateOptions": {
+            "required": true,
+            "label": "BrowZine API Key",
+            "placeholder": "ENTER API KEY"
+          }
+        },
+        {
+          "key": "journalCoverImagesEnabled",
+          "type": "select",
+          "defaultValue": true,
+          "templateOptions": {
+            "label": "Enable Journal Cover Images",
+            "options": [
+              {
+                "name": "true",
+                "value": true
+              },
+              {
+                "name": "false",
+                "value": false
+              }
+            ]
+          }
+        },
+        {
+          "key": "journalBrowZineWebLinkTextEnabled",
+          "type": "select",
+          "defaultValue": true,
+          "templateOptions": {
+            "label": "Enable BrowZine Web Journal Issue Links",
+            "options": [
+              {
+                "name": "true",
+                "value": true
+              },
+              {
+                "name": "false",
+                "value": false
+              }
+            ]
+          }
+        },
+        {
+          "key": "journalBrowZineWebLinkText",
+          "type": "input",
+          "defaultValue": "View Journal Contents",
+          "templateOptions": {
+            "label": "BrowZine Web Journal Issue Link Text"
+          }
+        },
+        {
+          "key": "articleBrowZineWebLinkTextEnabled",
+          "type": "select",
+          "defaultValue": true,
+          "templateOptions": {
+            "label": "Enable BrowZine Web Article In Context Links",
+            "options": [
+              {
+                "name": "true",
+                "value": true
+              },
+              {
+                "name": "false",
+                "value": false
+              }
+            ]
+          }
+        },
+        {
+          "key": "articleBrowZineWebLinkText",
+          "type": "input",
+          "defaultValue": "View Issue Contents",
+          "templateOptions": {
+            "label": "BrowZine Web Article In Context Link Text"
+          }
+        },
+        {
+          "key": "articlePDFDownloadLinkEnabled",
+          "type": "select",
+          "defaultValue": true,
+          "templateOptions": {
+            "label": "Enable BrowZine Web PDF Download Links",
+            "options": [
+              {
+                "name": "true",
+                "value": true
+              },
+              {
+                "name": "false",
+                "value": false
+              }
+            ]
+          }
+        },
+        {
+          "key": "articlePDFDownloadLinkText",
+          "type": "input",
+          "defaultValue": "Download PDF",
+          "templateOptions": {
+            "label": "BrowZine Web PDF Download Link Text"
+          }
+        },
+        {
+          "key": "printRecordsIntegrationEnabled",
+          "type": "select",
+          "defaultValue": true,
+          "templateOptions": {
+            "label": "Enable Print Records Integration",
+            "options": [
+              {
+                "name": "true",
+                "value": true
+              },
+              {
+                "name": "false",
+                "value": false
+              }
+            ]
+          }
+        }
+      ]
+    }
+  },
+	{
 		"face": "https://pbs.twimg.com/profile_images/905906120794963968/lHQ0ivpW_400x400.jpg",
 		"notes": "Add a nav bar underneath the search bar to provide additional links in the primo-explore UI",
 		"who": "NYU Libraries",
