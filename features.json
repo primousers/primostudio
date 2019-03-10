@@ -393,7 +393,8 @@
                 }
             ]
         }
-    },{
+    },
+  {
 		"face": "https://avatars1.githubusercontent.com/u/47966354?s=400&v=4",
 		"notes": "Adding the ability to filter by category the database search",
 		"who": "Technion Central Library",
@@ -401,6 +402,6 @@
 		"linkGit": "https://github.com/technion-central-library/primo-explore-filter-data-base-by-category-search",
 		"npmid": "primo-explore-filter-data-base-by-category-search",
 		"version": "0.0.4",
-		"hook": "prm-tree-nav-after"		
-	}	
+    "hook": "prm-tree-nav-after"
+    }
 ]
