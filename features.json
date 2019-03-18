@@ -1,5 +1,57 @@
 [
 	{
+	  "face": "https://avatars2.githubusercontent.com/u/11337842?s=200&v=4",
+	  "notes": "Add popup Help Menu with trigger in the Primo Top Bar",
+	  "who": "BU Libraries",
+	  "what": "help-menu-topbar",
+	  "linkGit": "https://github.com/bulib/primo-explore-bu/tree/master/packages/help-menu",
+	  "npmid": "primo-explore-help-menu",
+	  "version": "0.9.5",
+	  "hook": "prm-search-bookmark-filter-after",
+	  "config": {
+	    "form": [
+	      {
+	        "key": "logToConsole",
+	        "type": "select",
+	        "defaultValue": true,
+	        "templateOptions": {
+	          "label": "(debug) Log debug messages to console",
+	          "required": false,
+	          "options": [
+	            { "name": "true",  "value": true  },
+	            { "name": "false", "value": false }
+	          ]
+	        }
+	      },
+	      {
+	        "key": "publishEvents",
+	        "type": "select",
+	        "defaultValue": true,
+	        "templateOptions": {
+	          "label": "(debug) Determine whether click/usage events are published to Analytics",
+	          "required": false,
+	          "options": [
+	            { "name": "true",  "value": true  },
+	            { "name": "false", "value": false }
+	          ]
+	        }
+	      },
+	      {
+	        "key": "helpMenuWidth",
+	        "type": "input",
+	        "defaultValue":500,
+	        "templateOptions": {
+	          "required": false,
+	          "label": "Width of help-menu (nuber of pixels as an Integer)",
+	          "placeholder": 500
+	        }
+	      },
+	      {"key":"list_of_elements"},
+	      {"key":"logEventToAnalytics"}
+	    ]
+	  }
+	},
+	{
 		"face": "https://avatars2.githubusercontent.com/u/11337842?s=200&v=4",
 		"notes": "Add 'Open Access available via unpaywall' link to search-result-avaliability-line-after in Primo New UI",
 		"who": "BU Libraries",
