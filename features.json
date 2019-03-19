@@ -6,7 +6,7 @@
 		"what": "bulib-unpaywall",
 		"linkGit": "https://github.com/bulib/primo-explore-bu/tree/master/packages/unpaywall",
 		"npmid": "primo-explore-unpaywall",
-		"version": "1.1.3",
+		"version": "1.1.5",
 		"hook": "prm-search-result-avaliability-line-after",
 		"config": {
 			"form": [
