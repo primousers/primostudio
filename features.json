@@ -71,9 +71,9 @@
 				{
 					"key": "publishEvents",
 					"type": "select",
-					"defaultValue": true,
+					"defaultValue": false,
 					"templateOptions": {
-						"label": "(debug) Determine whether click/usage events are published to Analytics",
+						"label": "(debug) Determine whether events are published to Analytics",
 						"options": [
 							{ "name": "true","value": true },
 							{ "name": "false", "value": false }
