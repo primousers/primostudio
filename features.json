@@ -145,6 +145,207 @@
       ]
     }
   },
+{
+		"face": "https://avatars2.githubusercontent.com/u/11337842?s=200&v=4",
+		"notes": "Add 'Open Access available via unpaywall' link to search-result-avaliability-line-after in Primo New UI",
+		"who": "BU Libraries",
+		"what": "bulib-unpaywall",
+		"linkGit": "https://github.com/bulib/primo-explore-bu/tree/master/packages/unpaywall",
+		"npmid": "primo-explore-unpaywall",
+		"version": "1.1.7",
+		"hook": "prm-search-result-avaliability-line-after",
+		"config": {
+			"form": [
+				{
+					"key": "email",
+					"type": "input",
+					"templateOptions": {
+						"required": true,
+						"label": "Email used for Unpaywall API access",
+						"placeholder": "username@institution.edu"
+					}
+				},
+				{
+					"key": "showOnResultsPage",
+					"type": "select",
+					"defaultValue": true,
+					"templateOptions": {
+						"required": false,
+						"label": "Include OA links on search results page",
+						"options": [
+							{ "name": "true","value": true },
+							{ "name": "false", "value": false }
+						]
+					}
+				},
+				{
+					"key": "showVersionLabel",
+					"type": "select",
+					"defaultValue": true,
+					"templateOptions": {
+						"label": "Add version qualification to link display ('Submitted', 'Accepted')",
+						"options": [
+							{ "name": "true","value": true },
+							{ "name": "false", "value": false }
+						]
+					}
+				},
+				{
+					"key": "logToConsole",
+					"type": "select",
+					"defaultValue": true,
+					"templateOptions": {
+						"label": "(debug) Log debug messages to console",
+						"options": [
+							{ "name": "true","value": true },
+							{ "name": "false", "value": false }
+						]
+					}
+				},
+				{
+					"key": "showDebugTable",
+					"type": "select",
+					"defaultValue": false,
+					"templateOptions": {
+						"label": "(debug) Display table of values from Item PNX",
+						"options": [
+							{ "name": "true","value": true },
+							{ "name": "false", "value": false }
+						]
+					}
+				},
+				{
+					"key": "publishEvents",
+					"type": "select",
+					"defaultValue": false,
+					"templateOptions": {
+						"label": "(debug) Determine whether events are published to Analytics",
+						"options": [
+							{ "name": "true","value": true },
+							{ "name": "false", "value": false }
+						]
+					}
+				},
+				{ "key": "logEvent" }
+			]
+		}
+	},
+	{
+		"face": "https://avatars0.githubusercontent.com/u/5099608?s=200&v=4",
+		"notes": "Add Third Iron powered enhancements to your search results: LibKey Instant PDF Downloading for fast content access, Viewing the Complete Issue of an article inside of BrowZine to increase serendipitous discovery and Journal Cover Images to improve journal recognition.",
+		"who": "Third Iron, LLC",
+		"what": "BrowZine",
+		"linkGit": "https://github.com/thirdiron/primo-studio-browzine",
+		"npmid": "primo-studio-browzine",
+		"version": "1.1.0",
+		"hook": "prm-search-result-availability-line-after",
+		"config": {
+			"form": [
+				{
+					"key": "libraryId",
+					"type": "input",
+					"templateOptions": {
+						"required": true,
+						"label": "BrowZine Library Id (Questions? Email support@thirdiron.com)",
+						"placeholder": "ENTER LIBRARY ID"
+					}
+				},
+				{
+					"key": "apiKey",
+					"type": "input",
+					"templateOptions": {
+						"required": true,
+						"label": "BrowZine API Key",
+						"placeholder": "ENTER API KEY"
+					}
+				},
+				{
+					"key": "journalCoverImagesEnabled",
+					"type": "select",
+					"defaultValue": true,
+					"templateOptions": {
+						"label": "Enable Journal Cover Images",
+						"options": [
+							{ "name": "true","value": true },
+							{ "name": "false", "value": false }
+						]
+					}
+				},
+				{
+					"key": "journalBrowZineWebLinkTextEnabled",
+					"type": "select",
+					"defaultValue": true,
+					"templateOptions": {
+						"label": "Enable BrowZine Web Journal Issue Links",
+						"options": [
+							{ "name": "true","value": true },
+							{ "name": "false", "value": false }
+						]
+					}
+				},
+				{
+					"key": "journalBrowZineWebLinkText",
+					"type": "input",
+					"defaultValue": "View Journal Contents",
+					"templateOptions": {
+						"label": "BrowZine Web Journal Issue Link Text"
+					}
+				},
+				{
+					"key": "articleBrowZineWebLinkTextEnabled",
+					"type": "select",
+					"defaultValue": true,
+					"templateOptions": {
+						"label": "Enable BrowZine Web Article In Context Links",
+						"options": [
+							{ "name": "true","value": true },
+							{ "name": "false", "value": false }
+						]
+					}
+				},
+				{
+					"key": "articleBrowZineWebLinkText",
+					"type": "input",
+					"defaultValue": "View Issue Contents",
+					"templateOptions": {
+						"label": "BrowZine Web Article In Context Link Text"
+					}
+				},
+				{
+					"key": "articlePDFDownloadLinkEnabled",
+					"type": "select",
+					"defaultValue": true,
+					"templateOptions": {
+						"label": "Enable BrowZine Web PDF Download Links",
+						"options": [
+							{ "name": "true","value": true },
+							{ "name": "false", "value": false }
+						]
+					}
+				},
+				{
+					"key": "articlePDFDownloadLinkText",
+					"type": "input",
+					"defaultValue": "Download PDF",
+					"templateOptions": {
+						"label": "BrowZine Web PDF Download Link Text"
+					}
+				},
+				{
+					"key": "printRecordsIntegrationEnabled",
+					"type": "select",
+					"defaultValue": true,
+					"templateOptions": {
+						"label": "Enable Print Records Integration",
+						"options": [
+							{ "name": "true","value": true },
+							{ "name": "false", "value": false }
+						]
+					}
+				}
+			]
+		}
+	},
 	{
 		"face": "https://pbs.twimg.com/profile_images/905906120794963968/lHQ0ivpW_400x400.jpg",
 		"notes": "Add a nav bar underneath the search bar to provide additional links in the primo-explore UI",
@@ -155,16 +356,25 @@
 		"version": "0.0.4",
 		"hook": "prm-search-bar-after",
 		"config": {
-			"multiple":5,
-			"form":
-			[
-				{"key":"name"},
-				{"key":"description"},
-				{"key":"action"},
-				{"key":"iconSet", "templateOptions":{"label": "icon set"}},
-				{"key":"iconName", "templateOptions":{"label": "icon name"}},
-				{"key":"cssClasses"},
-				{"key":"show_xs"}
+			"multiple": 5,
+			"form": [
+				{ "key": "name" },
+				{ "key": "description" },
+				{ "key": "action" },
+				{
+					"key": "iconSet",
+					"templateOptions": {
+						"label": "icon set"
+					}
+				},
+				{
+					"key": "iconName",
+					"templateOptions": {
+						"label": "icon name"
+					}
+				},
+				{ "key": "cssClasses" },
+				{ "key": "show_xs" }
 			]
 		}
 	},
@@ -219,25 +429,39 @@
 		"hook": "prm-search-bar-after"
 	},
 	{
-	    "face": "https://avatars2.githubusercontent.com/u/19833254?s=400&v=4",
-	    "notes": "Allows you to remove the GES request from Primo VE full view. Except for the configured locations",
-	    "who": "Gilad Wolf",
-	    "what": "remove specific request except for location",
-	    "linkGit": "https://github.com/gilax/remove-specific-request-for-location",
-	    "npmid": "remove-specific-request-for-location",
-	    "hook": "prm-service-links-after",
-	    "version": "1.0.8",
-	    "systemExclusive": "ve",
-	    "config": {
-		"form":
-		    [
-				{"key":"libraryCode", "templateOptions":{"label": "library code for appearance"}},
-				{"key":"subLocationCode", "templateOptions":{"label": "location code for appearance"}},
-				{"key":"displayLabel", "templateOptions":{"label": "display link"}}
-		    ]
+		"face": "https://avatars2.githubusercontent.com/u/19833254?s=400&v=4",
+		"notes": "Allows you to remove the GES request from Primo VE full view. Except for the configured locations",
+		"who": "Gilad Wolf",
+		"what": "remove specific request except for location",
+		"linkGit": "https://github.com/gilax/remove-specific-request-for-location",
+		"npmid": "remove-specific-request-for-location",
+		"hook": "prm-service-links-after",
+		"version": "1.0.8",
+		"systemExclusive": "ve",
+		"config": {
+			"form": [
+				{
+					"key": "libraryCode",
+					"templateOptions": {
+						"label": "library code for appearance"
+					}
+				},
+				{
+					"key": "subLocationCode",
+					"templateOptions": {
+						"label": "location code for appearance"
+					}
+				},
+				{
+					"key": "displayLabel",
+					"templateOptions": {
+						"label": "display link"
+					}
+				}
+			]
 		}
 	},
-  	{
+	{
 		"face": "https://pbs.twimg.com/profile_images/905906120794963968/lHQ0ivpW_400x400.jpg",
 		"notes": "Report an issue with a record from the full display page",
 		"who": "Allen Jones",
@@ -247,151 +471,123 @@
 		"version": "1.0.0",
 		"hook": "prm-service-links-after",
 		"config": {
-			"multiple":1,
-			"form":
-			[
-				{"key":"text"},
-				{"key":"linkBase", "templateOptions":{"label": "Link Base"}}
+			"multiple": 1,
+			"form": [
+				{ "key": "text" },
+				{
+					"key": "linkBase",
+					"templateOptions": {
+						"label": "Link Base"
+					}
+				}
 			]
 		}
 	},
-    {
-        "face": "https://avatars1.githubusercontent.com/u/8748212?s=40&v=4",
-        "notes": "Add Altmetrics to full display",
-        "who": "Ulrich Leodolter",
-        "what": "Altmetrics",
-        "linkGit": "https://github.com/uleodolter/primo-studio-altmetrics",
-        "npmid": "primo-studio-altmetrics",
-        "version": "1.0.1",
-        "hook": "prm-full-view-after",
-        "config": {
-            "form": [
-                {
-                    "key": "badgetype",
-                    "type": "select",
-                    "templateOptions": {
-                        "label": "Altmetrics Badge type",
-                        "options": [
-                            {
-                                "value": "Default",
-                                "name": "Default"
-                            },
-                            {
-                                "value": "donut",
-                                "name": "Small donut"
-                            },
-                            {
-                                "value": "medium-donut",
-                                "name": "Medium donut"
-                            },
-                            {
-                                "value": "large-donut",
-                                "name": "Large donut"
-                            },
-                            {
-                                "value": "bar",
-                                "name": "Small bar"
-                            },
-                            {
-                                "value": "medium-bar",
-                                "name": "Medium bar"
-                            },
-                            {
-                                "value": "large-bar",
-                                "name": "Large bar"
-                            }
-                        ]
-                    }
-                },
-                {
-                    "key": "apikey",
-                    "type": "input",
-                    "templateOptions": {
-                        "label": "Altmetrics API key"
-                    }
-                },
-                {
-                    "key": "isbn",
-                    "type": "checkbox",
-                    "templateOptions": {
-                        "label": "Use ISBN fallback"
-                    }
-                }
-            ]
-        }
-    },
-    {
-        "face": "https://avatars1.githubusercontent.com/u/8748212?s=40&v=4",
-        "notes": "Add PlumX to full display",
-        "who": "Ulrich Leodolter",
-        "what": "PlumX Widget",
-        "linkGit": "https://github.com/uleodolter/primo-studio-plumx",
-        "npmid": "primo-studio-plumx",
-        "version": "1.0.1",
-        "hook": "prm-full-view-after",
-        "config": {
-            "form": [
-                {
-                    "key": "widgettype",
-                    "type": "select",
-                    "templateOptions": {
-                        "label": "PlumX Widget type",
-                        "options": [
-                            {
-                                "value": "print",
-                                "name": "Plum Print"
-                            },
-                            {
-                                "value": "details",
-                                "name": "Details"
-                            },
-                            {
-                                "value": "summary",
-                                "name": "Summary"
-                            },
-                            {
-                                "value": "badge",
-                                "name": "PlumX Badge"
-                            }
-                        ]
-                    }
-                },
-                {
-                    "key": "widgettheme",
-                    "type": "select",
-                    "templateOptions": {
-                        "label": "PlumX Widget theme",
-                        "options": [
-                            {
-                                "value": "default",
-                                "name": "Default"
-                            },
-                            {
-                                "value": "bigben",
-                                "name": "Big Ben"
-                            },
-                            {
-                                "value": "liberty",
-                                "name": "Liberty"
-                            }
-                        ]
-                    }
-                },
-                {
-                    "key": "apikey",
-                    "type": "input",
-                    "templateOptions": {
-                        "label": "PlumX API key"
-                    }
-                },
-                {
-                    "key": "isbn",
-                    "type": "checkbox",
-                    "templateOptions": {
-                        "label": "Use ISBN fallback"
-                    }
-                }
-            ]
-        }
-    }
+	{
+		"face": "https://avatars1.githubusercontent.com/u/8748212?s=40&v=4",
+		"notes": "Add Altmetrics to full display",
+		"who": "Ulrich Leodolter",
+		"what": "Altmetrics",
+		"linkGit": "https://github.com/uleodolter/primo-studio-altmetrics",
+		"npmid": "primo-studio-altmetrics",
+		"version": "1.0.1",
+		"hook": "prm-full-view-after",
+		"config": {
+			"form": [
+				{
+					"key": "badgetype",
+					"type": "select",
+					"templateOptions": {
+						"label": "Altmetrics Badge type",
+						"options": [
+							{ "value": "Default", "name": "Default" },
+							{ "value": "donut", "name": "Small donut" },
+							{ "value": "medium-donut", "name": "Medium donut" },
+							{ "value": "large-donut", "name": "Large donut" },
+							{ "value": "bar", "name": "Small bar" },
+							{ "value": "medium-bar", "name": "Medium bar" },
+							{ "value": "large-bar", "name": "Large bar" }
+						]
+					}
+				},
+				{
+					"key": "apikey",
+					"type": "input",
+					"templateOptions": {
+						"label": "Altmetrics API key"
+					}
+				},
+				{
+					"key": "isbn",
+					"type": "checkbox",
+					"templateOptions": {
+						"label": "Use ISBN fallback"
+					}
+				}
+			]
+		}
+	},
+	{
+		"face": "https://avatars1.githubusercontent.com/u/8748212?s=40&v=4",
+		"notes": "Add PlumX to full display",
+		"who": "Ulrich Leodolter",
+		"what": "PlumX Widget",
+		"linkGit": "https://github.com/uleodolter/primo-studio-plumx",
+		"npmid": "primo-studio-plumx",
+		"version": "1.0.1",
+		"hook": "prm-full-view-after",
+		"config": {
+			"form": [
+				{
+					"key": "widgettype",
+					"type": "select",
+					"templateOptions": {
+						"label": "PlumX Widget type",
+						"options": [
+							{ "value": "print", "name": "Plum Print" },
+							{ "value": "details", "name": "Details" },
+							{ "value": "summary", "name": "Summary" },
+							{ "value": "badge", "name": "PlumX Badge" }
+						]
+					}
+				},
+				{
+					"key": "widgettheme",
+					"type": "select",
+					"templateOptions": {
+						"label": "PlumX Widget theme",
+						"options": [
+							{ "value": "default", "name": "Default" },
+							{ "value": "bigben", "name": "Big Ben" },
+							{ "value": "liberty", "name": "Liberty" }
+						]
+					}
+				},
+				{
+					"key": "apikey",
+					"type": "input",
+					"templateOptions": {
+						"label": "PlumX API key"
+					}
+				},
+				{
+					"key": "isbn",
+					"type": "checkbox",
+					"templateOptions": {
+						"label": "Use ISBN fallback"
+					}
+				}
+			]
+		}
+	},
+	{
+		"face": "https://avatars1.githubusercontent.com/u/47966354?s=400&v=4",
+		"notes": "Adding the ability to filter by category the database search",
+		"who": "Technion Central Library",
+		"what": "A-Z Databases category index",
+		"linkGit": "https://github.com/technion-central-library/primo-explore-filter-data-base-by-category-search",
+		"npmid": "primo-explore-filter-data-base-by-category-search",
+		"version": "0.0.4",
+		"hook": "prm-tree-nav-after"
+	}
 ]
