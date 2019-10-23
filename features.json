@@ -214,7 +214,7 @@
 		"what": "bulib-unpaywall",
 		"linkGit": "https://github.com/bulib/primo-explore-bu/tree/master/packages/unpaywall",
 		"npmid": "primo-explore-unpaywall",
-		"version": "1.2.1",
+		"version": "1.3.2",
 		"hook": "prm-search-result-availability-line",
 		"config": {
 			"form": [
@@ -225,6 +225,33 @@
 						"required": true,
 						"label": "Email used for Unpaywall API access",
 						"placeholder": "username@institution.edu"
+					}
+				},
+				{
+					"key": "labelText",
+					"type": "input",
+					"templateOptions": {
+						"required": false,
+						"label": "Text/copy for the main call-to-action",
+						"placeholder": "Open Access available via unpaywall"
+					}
+				},
+				{
+					"key": "imageUrl",
+					"type": "input",
+					"templateOptions": {
+						"required": false,
+						"label": "Alternative image to display with unpaywall link",
+						"placeholder": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/25/Open_Access_logo_PLoS_white.svg/384px-Open_Access_logo_PLoS_white.svg.png"
+					}
+				},
+				{
+					"key": "imageStyle",
+					"type": "input",
+					"templateOptions": {
+						"required": false,
+						"label": "CSS tweaking to style whatever image you've chosen",
+						"placeholder": "height: 24px; vertical-align: bottom; padding-right: 5px;"
 					}
 				},
 				{
