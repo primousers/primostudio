@@ -6,7 +6,7 @@
 		"what": "help-menu-topbar",
 		"linkGit": "https://github.com/bulib/primo-explore-bu/tree/master/packages/help-menu",
 		"npmid": "primo-explore-help-menu",
-		"version": "1.2.2",
+		"version": "1.3.0",
 		"hook": "prm-search-bookmark-filter-after",
 		"config": {
 			"form": [
