@@ -1,12 +1,12 @@
 [
 	{
 		"face": "https://avatars2.githubusercontent.com/u/11337842?s=200&v=4",
-		"notes": "Add popup Help Menu with trigger in the Primo Top Bar",
+		"notes": "Embed a menu of custom help information in the top menu bar",
 		"who": "BU Libraries",
 		"what": "help-menu-topbar",
 		"linkGit": "https://github.com/bulib/primo-explore-bu/tree/master/packages/help-menu",
 		"npmid": "primo-explore-help-menu",
-		"version": "1.1.4",
+		"version": "1.3.0",
 		"hook": "prm-search-bookmark-filter-after",
 		"config": {
 			"form": [
@@ -37,6 +37,16 @@
 					}
 				},
 				{
+					"key": "helpMenuTitle",
+					"type": "input",
+					"defaultValue":"Search Help",
+					"templateOptions": {
+						"required": false,
+						"label": "Page and popup title displayed at the top of the menu (useful for translations)",
+						"placeholder": "Search Help"
+					}
+				},
+				{
 					"key": "helpMenuWidth",
 					"type": "input",
 					"defaultValue":500,
@@ -54,11 +64,11 @@
 	{
     "face": "https://avatars0.githubusercontent.com/u/5099608?s=200&v=4",
     "notes": "Add Third Iron powered enhancements to your search results: LibKey Instant PDF Downloading for fast content access, Viewing the Complete Issue of an article inside of BrowZine to increase serendipitous discovery and Journal Cover Images to improve journal recognition.",
-    "who": "Third Iron, LLC",
+    "who": "Third Iron LLC",
     "what": "LibKey | BrowZine",
     "linkGit": "https://github.com/thirdiron/primo-studio-browzine",
     "npmid": "primo-studio-browzine",
-    "version": "1.1.0",
+    "version": "1.3.0",
     "hook": "prm-search-result-availability-line-after",
     "config": {
       "form": [
@@ -177,6 +187,32 @@
           }
         },
         {
+          "key": "articleLinkEnabled",
+          "type": "select",
+          "defaultValue": true,
+          "templateOptions": {
+            "label": "Enable BrowZine Web Article Links",
+            "options": [
+              {
+                "name": "true",
+                "value": true
+              },
+              {
+                "name": "false",
+                "value": false
+              }
+            ]
+          }
+        },
+        {
+          "key": "articleLinkText",
+          "type": "input",
+          "defaultValue": "Read Article",
+          "templateOptions": {
+            "label": "BrowZine Web Article Link Text"
+          }
+        },
+        {
           "key": "printRecordsIntegrationEnabled",
           "type": "select",
           "defaultValue": true,
@@ -193,19 +229,132 @@
               }
             ]
           }
+        },
+        {
+          "key": "unpaywallEmailAddressKey",
+          "type": "input",
+          "templateOptions": {
+            "required": false,
+            "label": "Unpaywall Email Address Key",
+            "placeholder": "ENTER UNPAYWALL EMAIL ADDRESS KEY"
+          }
+        },
+        {
+          "key": "articlePDFDownloadViaUnpaywallEnabled",
+          "type": "select",
+          "defaultValue": true,
+          "templateOptions": {
+            "label": "Enable Article PDF Download via Unpaywall",
+            "options": [
+              {
+                "name": "true",
+                "value": true
+              },
+              {
+                "name": "false",
+                "value": false
+              }
+            ]
+          }
+        },
+        {
+          "key": "articlePDFDownloadViaUnpaywallText",
+          "type": "input",
+          "defaultValue": "Download PDF (via Unpaywall)",
+          "templateOptions": {
+            "label": "Article PDF Download via Unpaywall Text"
+          }
+        },
+        {
+          "key": "articleLinkViaUnpaywallEnabled",
+          "type": "select",
+          "defaultValue": true,
+          "templateOptions": {
+            "label": "Enable Article Link via Unpaywall",
+            "options": [
+              {
+                "name": "true",
+                "value": true
+              },
+              {
+                "name": "false",
+                "value": false
+              }
+            ]
+          }
+        },
+        {
+          "key": "articleLinkViaUnpaywallText",
+          "type": "input",
+          "defaultValue": "Read Article (via Unpaywall)",
+          "templateOptions": {
+            "label": "Article Link via Unpaywall Text"
+          }
+        },
+        {
+          "key": "articleAcceptedManuscriptPDFViaUnpaywallEnabled",
+          "type": "select",
+          "defaultValue": true,
+          "templateOptions": {
+            "label": "Enable Article Accepted Manuscript PDF via Unpaywall",
+            "options": [
+              {
+                "name": "true",
+                "value": true
+              },
+              {
+                "name": "false",
+                "value": false
+              }
+            ]
+          }
+        },
+        {
+          "key": "articleAcceptedManuscriptPDFViaUnpaywallText",
+          "type": "input",
+          "defaultValue": "Download PDF (Accepted Manuscript via Unpaywall)",
+          "templateOptions": {
+            "label": "Article Accepted Manuscript PDF Text"
+          }
+        },
+        {
+          "key": "articleAcceptedManuscriptArticleLinkViaUnpaywallEnabled",
+          "type": "select",
+          "defaultValue": true,
+          "templateOptions": {
+            "label": "Enable Article Accepted Manuscript Article Link via Unpaywall",
+            "options": [
+              {
+                "name": "true",
+                "value": true
+              },
+              {
+                "name": "false",
+                "value": false
+              }
+            ]
+          }
+        },
+        {
+          "key": "articleAcceptedManuscriptArticleLinkViaUnpaywallText",
+          "type": "input",
+          "defaultValue": "Read Article (Accepted Manuscript via Unpaywall)",
+          "templateOptions": {
+            "label": "Article Accepted Manuscript Article Link Text"
+          }
         }
       ]
     }
   },
 {
 		"face": "https://avatars2.githubusercontent.com/u/11337842?s=200&v=4",
-		"notes": "Add 'Open Access available via unpaywall' link to search-result-avaliability-line-after in Primo New UI",
+		"notes": "Add Open Access clickthrough link to search-result-avaliability-line via unpaywall",
 		"who": "BU Libraries",
 		"what": "bulib-unpaywall",
 		"linkGit": "https://github.com/bulib/primo-explore-bu/tree/master/packages/unpaywall",
 		"npmid": "primo-explore-unpaywall",
-		"version": "1.1.7",
-		"hook": "prm-search-result-availability-line-after",
+		"version": "1.3.2",
+		"hook": "prm-search-result-availability-line",
 		"config": {
 			"form": [
 				{
@@ -215,6 +364,46 @@
 						"required": true,
 						"label": "Email used for Unpaywall API access",
 						"placeholder": "username@institution.edu"
+					}
+				},
+				{
+					"key": "labelText",
+					"type": "input",
+					"templateOptions": {
+						"required": false,
+						"label": "Text/copy for the main call-to-action",
+						"placeholder": "Open Access available via unpaywall"
+					}
+				},
+				{
+					"key": "imageUrl",
+					"type": "input",
+					"templateOptions": {
+						"required": false,
+						"label": "Alternative image to display with unpaywall link",
+						"placeholder": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/25/Open_Access_logo_PLoS_white.svg/384px-Open_Access_logo_PLoS_white.svg.png"
+					}
+				},
+				{
+					"key": "imageStyle",
+					"type": "input",
+					"templateOptions": {
+						"required": false,
+						"label": "CSS tweaking to style whatever image you've chosen",
+						"placeholder": "height: 24px; vertical-align: bottom; padding-right: 5px;"
+					}
+				},
+				{
+					"key": "overrideOACheck",
+					"type": "select",
+					"defaultValue": true,
+					"templateOptions": {
+						"required": false,
+						"label": "Make unpaywall call regardless of OA status",
+						"options": [
+							{ "name": "true","value": true },
+							{ "name": "false", "value": false }
+						]
 					}
 				},
 				{
@@ -279,122 +468,6 @@
 					}
 				},
 				{ "key": "logEvent" }
-			]
-		}
-	},
-	{
-		"face": "https://avatars0.githubusercontent.com/u/5099608?s=200&v=4",
-		"notes": "Add Third Iron powered enhancements to your search results: LibKey Instant PDF Downloading for fast content access, Viewing the Complete Issue of an article inside of BrowZine to increase serendipitous discovery and Journal Cover Images to improve journal recognition.",
-		"who": "Third Iron, LLC",
-		"what": "BrowZine",
-		"linkGit": "https://github.com/thirdiron/primo-studio-browzine",
-		"npmid": "primo-studio-browzine",
-		"version": "1.1.0",
-		"hook": "prm-search-result-availability-line-after",
-		"config": {
-			"form": [
-				{
-					"key": "libraryId",
-					"type": "input",
-					"templateOptions": {
-						"required": true,
-						"label": "BrowZine Library Id (Questions? Email support@thirdiron.com)",
-						"placeholder": "ENTER LIBRARY ID"
-					}
-				},
-				{
-					"key": "apiKey",
-					"type": "input",
-					"templateOptions": {
-						"required": true,
-						"label": "BrowZine API Key",
-						"placeholder": "ENTER API KEY"
-					}
-				},
-				{
-					"key": "journalCoverImagesEnabled",
-					"type": "select",
-					"defaultValue": true,
-					"templateOptions": {
-						"label": "Enable Journal Cover Images",
-						"options": [
-							{ "name": "true","value": true },
-							{ "name": "false", "value": false }
-						]
-					}
-				},
-				{
-					"key": "journalBrowZineWebLinkTextEnabled",
-					"type": "select",
-					"defaultValue": true,
-					"templateOptions": {
-						"label": "Enable BrowZine Web Journal Issue Links",
-						"options": [
-							{ "name": "true","value": true },
-							{ "name": "false", "value": false }
-						]
-					}
-				},
-				{
-					"key": "journalBrowZineWebLinkText",
-					"type": "input",
-					"defaultValue": "View Journal Contents",
-					"templateOptions": {
-						"label": "BrowZine Web Journal Issue Link Text"
-					}
-				},
-				{
-					"key": "articleBrowZineWebLinkTextEnabled",
-					"type": "select",
-					"defaultValue": true,
-					"templateOptions": {
-						"label": "Enable BrowZine Web Article In Context Links",
-						"options": [
-							{ "name": "true","value": true },
-							{ "name": "false", "value": false }
-						]
-					}
-				},
-				{
-					"key": "articleBrowZineWebLinkText",
-					"type": "input",
-					"defaultValue": "View Issue Contents",
-					"templateOptions": {
-						"label": "BrowZine Web Article In Context Link Text"
-					}
-				},
-				{
-					"key": "articlePDFDownloadLinkEnabled",
-					"type": "select",
-					"defaultValue": true,
-					"templateOptions": {
-						"label": "Enable BrowZine Web PDF Download Links",
-						"options": [
-							{ "name": "true","value": true },
-							{ "name": "false", "value": false }
-						]
-					}
-				},
-				{
-					"key": "articlePDFDownloadLinkText",
-					"type": "input",
-					"defaultValue": "Download PDF",
-					"templateOptions": {
-						"label": "BrowZine Web PDF Download Link Text"
-					}
-				},
-				{
-					"key": "printRecordsIntegrationEnabled",
-					"type": "select",
-					"defaultValue": true,
-					"templateOptions": {
-						"label": "Enable Print Records Integration",
-						"options": [
-							{ "name": "true","value": true },
-							{ "name": "false", "value": false }
-						]
-					}
-				}
 			]
 		}
 	},
