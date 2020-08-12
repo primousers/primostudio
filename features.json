@@ -1,13 +1,41 @@
 [
 	{
 		"face": "https://avatars0.githubusercontent.com/u/16111810?s=200&v=4",
-		"notes": "Embed Yewno Widget to search results.",
+		"notes": "This widget presents a mini Yewno Discover knowledge map on a webpage. Given a query via Primo, it fetches and renders the closest matching concept and its top related concepts from the Yewno concept graph.",
 		"who": "Yewno",
-		"what": "@yewno/primo-addon",
+		"what": "Yewno Primo Addon",
 		"linkGit": "https://github.com/yewno/primo-addon",
 		"npmid": "@yewno/primo-addon",
-		"version": "0.0.4",
-		"hook": "prmBackToLibrarySearchButtonAfter"
+		"version": "0.0.6",
+		"hook": "prmBackToLibrarySearchButtonAfter",
+		"config": {
+			"form": [
+				{
+					"key": "apikey",
+					"type": "input",
+					"templateOptions": {
+						"required": true,
+						"label": "Yewno Primo Addon Product Key"
+					}
+				},
+				{
+					"key":"ezproxy",
+					"type": "input",
+					"templateOptions": {
+						"required": false,
+						"label": "EZProxy url (leave blank to disable)"
+					}
+				},
+				{
+					"key": "config",
+					"type":"input",
+					"templateOptions": {
+						"required": false,
+						"label": "Advanced: Additional configuration options (JSON)"
+					}
+				}
+			]
+		}
 	},
 	{
 		"face": "https://avatars2.githubusercontent.com/u/11337842?s=200&v=4",
