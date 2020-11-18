@@ -6,8 +6,8 @@
 		"what": "Yewno Primo Addon",
 		"linkGit": "https://github.com/yewno/primo-addon",
 		"npmid": "yewno-primo-addon",
-		"version": "0.0.6",
-		"hook": "prm-back-to-library-search-button-after",
+		"version": "0.0.7",
+		"hook": "prmBackToLibrarySearchButtonAfter",
 		"config": {
 			"form": [
 				{
@@ -23,7 +23,33 @@
 					"type": "input",
 					"templateOptions": {
 						"required": false,
-						"label": "EZProxy url (leave blank to disable)"
+						"label": "EZProxy url, eg https://ezproxy.my-institute.edu?qurl= (leave blank to disable)"
+					}
+				},
+				{
+					"key": "ssologin",
+					"type": "select",
+					"defaultValue": false,
+					"templateOptions": {
+						"label": "Login to Yewno Discover using your institute's SAML SSO",
+						"options": [
+							{
+								"name": "true",
+								"value": true
+							},
+							{
+								"name": "false",
+								"value": false
+							}
+						]
+					}
+				},
+				{
+					"key": "entityid",
+					"type": "input",
+					"templateOptions": {
+						"required": false,
+						"label": "SAML Entity ID (optional, used to resolve WAYF during sign on)"
 					}
 				},
 				{
