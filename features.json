@@ -778,5 +778,26 @@
 		"npmid": "primo-explore-filter-data-base-by-category-search",
 		"version": "0.0.4",
 		"hook": "prm-tree-nav-after"
-	}
+	},
+	{
+	  "face": "https://avatars.githubusercontent.com/u/80420?s=60&u=1ca4b34fda800d52106c859b94f8c4d5959929bb&v=4",
+	  "notes": "Adds a widget in the account overview to manage appointments from the Appointment Scheduler Cloud App",
+	  "who": "Josh Weisman",
+	  "what": "Appoinment Scheduler",
+	  "linkGit": "https://github.com/ExLibrisGroup/alma-scheduler/tree/master/primo-studio-appointment-scheduler",
+	  "npmid": "primo-studio-appointment-scheduler",
+	  "version": "0.0.10",
+	  "hook": "prm-account-overview-after",
+	  "config": {
+	    "form": [
+	      {
+		"key": "apikey",
+		"templateOptions": {
+		  "placeholder": "Key with read-only to the Primo Public Key API",
+		  "label": "API Key"
+		}
+	      }
+	    ]
+	  }
+}
 ]
