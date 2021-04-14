@@ -799,5 +799,15 @@
 	      }
 	    ]
 	  }
-}
+        },
+	{
+	  "face": "https://avatars.githubusercontent.com/u/80420?s=60&u=1ca4b34fda800d52106c859b94f8c4d5959929bb&v=4",
+	  "notes": "Adds a widget in the Full View to display an author card based on Linked Data",
+	  "who": "Josh Weisman",
+	  "what": "Linked Data Author Card",
+	  "linkGit": "https://github.com/jweisman/primo-explore-lod-author-card",
+	  "npmid": "primo-studio-lod-author-card",
+	  "version": "0.0.4",
+	  "hook": "prmFullViewAfter"
+	}
 ]
