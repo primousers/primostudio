@@ -808,6 +808,6 @@
 	  "linkGit": "https://github.com/jweisman/primo-explore-lod-author-card",
 	  "npmid": "primo-studio-lod-author-card",
 	  "version": "0.0.4",
-	  "hook": "prmFullViewAfter"
+	  "hook": "prm-full-view-after"
 	}
 ]
