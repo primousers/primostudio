@@ -806,7 +806,7 @@
 	  "who": "Josh Weisman",
 	  "what": "Linked Data Author Card",
 	  "linkGit": "https://github.com/jweisman/primo-explore-lod-author-card",
-	  "npmid": "primo-studio-lod-author-card",
+	  "npmid": "primo-explore-lod-author-card",
 	  "version": "0.0.4",
 	  "hook": "prm-full-view-after"
 	}
