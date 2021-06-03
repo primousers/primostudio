@@ -786,20 +786,37 @@
 	  "what": "Appoinment Scheduler",
 	  "linkGit": "https://github.com/ExLibrisGroup/alma-scheduler/tree/master/primo-studio-appointment-scheduler",
 	  "npmid": "primo-studio-appointment-scheduler",
-	  "version": "0.0.10",
+	  "version": "0.1.0",
 	  "hook": "prm-account-overview-after",
 	  "config": {
 	    "form": [
 	      {
-		"key": "apikey",
+		"type": "checkbox",
+		"key": "sandbox",
 		"templateOptions": {
-		  "placeholder": "Key with read-only to the Primo Public Key API",
-		  "label": "API Key"
+		  "label": "Authenticate against sandbox environment"
 		}
-	      }
+	      },
+	      {
+		"type": "select",
+		"key": "first-day-of-week",
+		"templateOptions": {
+		  "label": "Start calendar on day",
+		  "options": [
+		    {
+		      "name": "Sunday",
+		      "value": 0
+		    },
+		    {
+		      "name": "Monday",
+		      "value": 1
+		    }
+		  ]
+		}
+	      }      
 	    ]
 	  }
-        },
+	},
 	{
 	  "face": "https://avatars.githubusercontent.com/u/80420?s=60&u=1ca4b34fda800d52106c859b94f8c4d5959929bb&v=4",
 	  "notes": "Adds a widget in the Full View to display an author card based on Linked Data",
