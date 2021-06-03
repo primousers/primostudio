@@ -799,7 +799,7 @@
 	      },
 	      {
 		"type": "select",
-		"key": "first-day-of-week",
+		"key": "firstDayOfWeek",
 		"templateOptions": {
 		  "label": "Start calendar on day",
 		  "options": [
