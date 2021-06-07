@@ -786,7 +786,7 @@
 	  "what": "Appoinment Scheduler",
 	  "linkGit": "https://github.com/ExLibrisGroup/alma-scheduler/tree/master/primo-studio-appointment-scheduler",
 	  "npmid": "primo-studio-appointment-scheduler",
-	  "version": "0.0.11",
+	  "version": "0.1.0",
 	  "hook": "prm-account-overview-after",
 	  "config": {
 	    "form": [
