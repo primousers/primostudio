@@ -3,6 +3,101 @@
 		"face": "https://avatars0.githubusercontent.com/u/16111810?s=200&v=4",
 		"notes": "This widget presents a mini Yewno Discover knowledge map on a webpage. Given a query via Primo, it fetches and renders the closest matching concept and its top related concepts from the Yewno concept graph.",
 		"who": "Yewno",
+		"what": "Yewno Primo Facet Addon",
+		"linkGit": "https://github.com/yewno/primo-addon/tree/primo-facet-addon",
+		"npmid": "yewno-primo-facet-addon",
+		"version": "0.0.2",
+		"hook": "prm-facet-after",
+		"config": {
+			"form": [{
+					"key": "apikey",
+					"type": "input",
+					"templateOptions": {
+						"required": true,
+						"label": "Yewno Primo Addon Product Key"
+					}
+				},
+				{
+					"key": "ezproxy",
+					"type": "input",
+					"templateOptions": {
+						"required": false,
+						"label": "EZProxy url, eg https://ezproxy.my-institute.edu?qurl= (leave blank to disable)"
+					}
+				},
+				{
+					"key": "ssologin",
+					"type": "select",
+					"defaultValue": false,
+					"templateOptions": {
+						"label": "Login to Yewno Discover using your institute's SAML SSO",
+						"options": [{
+								"name": "true",
+								"value": true
+							},
+							{
+								"name": "false",
+								"value": false
+							}
+						]
+					}
+				},
+				{
+					"key": "entityid",
+					"type": "input",
+					"templateOptions": {
+						"required": false,
+						"label": "SAML Entity ID (optional, used to resolve WAYF during sign on)"
+					}
+				},
+				{
+					"key": "config",
+					"type": "input",
+					"templateOptions": {
+						"required": false,
+						"label": "Advanced: Additional configuration options (JSON)"
+					}
+				},
+				{
+					"key": "height",
+					"type": "input",
+					"templateOptions": {
+						"required": false,
+						"label": "Height of addon"
+					}
+				},
+				{
+					"key": "showDefinitions",
+					"type": "select",
+					"defaultValue": true,
+					"templateOptions": {
+						"label": "Show definitions below the graph",
+						"options": [{
+								"name": "true",
+								"value": true
+							},
+							{
+								"name": "false",
+								"value": false
+							}
+						]
+					}
+				},
+				{
+					"key": "definitionCount",
+					"type": "input",
+					"templateOptions": {
+						"required": false,
+						"label": "Set count of definitions"
+					}
+				}
+			]
+		}
+	},
+	{
+		"face": "https://avatars0.githubusercontent.com/u/16111810?s=200&v=4",
+		"notes": "This widget presents a mini Yewno Discover knowledge map on a webpage. Given a query via Primo, it fetches and renders the closest matching concept and its top related concepts from the Yewno concept graph.",
+		"who": "Yewno",
 		"what": "Yewno Primo Addon",
 		"linkGit": "https://github.com/yewno/primo-addon",
 		"npmid": "yewno-primo-addon",
