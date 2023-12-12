@@ -723,7 +723,7 @@
 		"what": "PlumX Widget",
 		"linkGit": "https://github.com/uleodolter/primo-studio-plumx",
 		"npmid": "primo-studio-plumx",
-		"version": "1.0.1",
+		"version": "1.0.6",
 		"hook": "prm-full-view-after",
 		"config": {
 			"form": [
